@@ -17,6 +17,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import static javax.swing.WindowConstants.DISPOSE_ON_CLOSE;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.table.JTableHeader;
 
 /**
  *
@@ -75,6 +76,9 @@ public class BestCustomer extends JFrame {
         table = new JTable(model);
         table.setRowHeight(30);
         table.setFont(new Font("", Font.PLAIN, 20));
+        
+        JTableHeader header = table.getTableHeader();
+        header.setFont(new Font("Arial", Font.BOLD, 16));
 
         JScrollPane scrollPane = new JScrollPane(table);
         scrollPane.setBounds(50, 200, 1200, 600);

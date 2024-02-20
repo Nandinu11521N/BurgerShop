@@ -20,6 +20,7 @@ import javax.swing.JTable;
 import javax.swing.JTextField;
 import static javax.swing.WindowConstants.DISPOSE_ON_CLOSE;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.table.JTableHeader;
 
 /**
  *
@@ -125,6 +126,9 @@ public class SearchCustomer extends JFrame {
         table = new JTable(model);
         table.setRowHeight(30);
         table.setFont(new Font("", Font.PLAIN, 16));
+        
+        JTableHeader header = table.getTableHeader();
+        header.setFont(new Font("Arial", Font.BOLD, 16));
 
         JScrollPane scrollPane = new JScrollPane(table);
         scrollPane.setBounds(50, 400, 1000, 400);

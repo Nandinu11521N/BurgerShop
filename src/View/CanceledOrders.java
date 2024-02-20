@@ -18,6 +18,7 @@ import javax.swing.JTable;
 import static javax.swing.WindowConstants.DISPOSE_ON_CLOSE;
 import static javax.swing.WindowConstants.EXIT_ON_CLOSE;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.table.JTableHeader;
 
 /**
  *
@@ -85,6 +86,9 @@ public class CanceledOrders extends JFrame {
         JTable table = new JTable(model);
         table.setRowHeight(30);
         table.setFont(new Font("", Font.PLAIN, 16));
+        
+        JTableHeader header = table.getTableHeader();
+        header.setFont(new Font("Arial", Font.BOLD, 16));
         
         for (OrderDetails order : canceledOrders) {
         Object[] rowData = {

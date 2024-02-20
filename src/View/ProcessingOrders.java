@@ -84,7 +84,7 @@ public class ProcessingOrders extends JFrame {
         table.setFont(new Font("", Font.PLAIN, 16));
         
         JTableHeader header = table.getTableHeader();
-        header.setFont(new Font("Arial", Font.BOLD, 100));
+        header.setFont(new Font("Arial", Font.BOLD, 16));
         
         for (OrderDetails order : processingOrders) {
         Object[] rowData = {
