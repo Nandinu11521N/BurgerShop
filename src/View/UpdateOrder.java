@@ -34,7 +34,7 @@ public class UpdateOrder extends JFrame {
         
         btnUpdateOrder= new JButton("Update Order");
         btnUpdateOrder.setFont(new Font("",Font.PLAIN,20));
-        btnUpdateOrder.setBounds(1100,800,200,40);
+        btnUpdateOrder.setBounds(1200,700,200,40);
         btnUpdateOrder.setFocusable(false);
         btnUpdateOrder.addActionListener(evt ->{
             new UpdateOrderForm();
@@ -42,7 +42,7 @@ public class UpdateOrder extends JFrame {
         
         btnBack= new JButton("Back");
         btnBack.setFont(new Font("",Font.PLAIN,20));
-        btnBack.setBounds(1300,800,80,40);
+        btnBack.setBounds(1270,800,80,40);
         btnBack.setFocusable(false);
         btnBack.addActionListener(evt ->{
             new HomePage();
@@ -60,8 +60,8 @@ public class UpdateOrder extends JFrame {
         lblHome.setOpaque(true);
         
         lblimage= new JLabel();
-        lblimage.setBounds(-100,50,1200, 900);
-        ImageIcon icon = new ImageIcon("src/img/Screenshot 2024-02-20 at 19.42.32.png");
+        lblimage.setBounds(-35,10,1220, 980);
+        ImageIcon icon = new ImageIcon("src/img/update.png");
         lblimage.setIcon(icon);
         add(lblimage, BorderLayout.WEST);
         lblimage.setVisible(true);
@@ -71,6 +71,7 @@ public class UpdateOrder extends JFrame {
         
         add(btnUpdateOrder);
         add(btnBack);
+        getContentPane().setBackground(Color.gray);
         
     }   
 }

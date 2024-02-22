@@ -141,6 +141,7 @@ public class BestCustomer extends JFrame {
             add(lblHome);
 
             add(btnExit);
+            getContentPane().setBackground(Color.gray);
         }
     }
 }

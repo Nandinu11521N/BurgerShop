@@ -136,6 +136,7 @@ public class PlaceOrderForm extends JFrame {
             OrderController.orders.get(lastIndex).setBurgers(Integer.parseInt(txtQuantity.getText()));
             OrderController.orders.get(lastIndex).setTotals(Double.parseDouble(txtTotal.getText()));
             OrderController.orders.get(lastIndex).setOrderStatusArray(OrderDetails.STATUS_PREPARING);
+            JOptionPane.showMessageDialog(null, "Order placed successfully", "Success", JOptionPane.INFORMATION_MESSAGE);
         });
         
         btnBackTo= new JButton("Back To Home Page");
@@ -159,7 +160,7 @@ public class PlaceOrderForm extends JFrame {
         lblHome.setText("PLACE ORDER FORM");
         lblHome.setFont(new Font("",Font.BOLD,40));
         lblHome.setForeground(Color.white);
-        lblHome.setBounds(0,0,900,70);
+        lblHome.setBounds(0,0,1500,70);
         
         lblHome.setVerticalAlignment(JLabel.CENTER);
         lblHome.setHorizontalAlignment(JLabel.CENTER);

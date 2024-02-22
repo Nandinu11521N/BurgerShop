@@ -91,6 +91,7 @@ public class ViewOrders extends JFrame {
         add(btnPreparingOrders);
         add(btnCanceledOrders);
         add(btnExit);
+        getContentPane().setBackground(Color.gray);
         
     }
 }

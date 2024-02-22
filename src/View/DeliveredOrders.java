@@ -109,5 +109,6 @@ public class DeliveredOrders extends JFrame {
         getContentPane().setBackground(Color.WHITE);
         setResizable(false);
         setVisible(true);
+        getContentPane().setBackground(Color.gray);
     }
 }

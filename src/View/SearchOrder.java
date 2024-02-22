@@ -159,6 +159,7 @@ public class SearchOrder extends JFrame {
         add(txtStatus);
         
         add(btnCancel);
+        getContentPane().setBackground(Color.gray);
         
         
      

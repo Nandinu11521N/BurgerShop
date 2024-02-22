@@ -225,6 +225,7 @@ public class UpdateOrderForm extends JFrame {
         add(btnUpdate);
         
         add(comboBox);
+        getContentPane().setBackground(Color.gray);
         
         
     }

@@ -72,7 +72,7 @@ import static javax.swing.WindowConstants.DISPOSE_ON_CLOSE;
         
         lblimage= new JLabel();
         lblimage.setBounds(0,50,900, 950);
-        ImageIcon icon = new ImageIcon("src/img/Screenshot 2024-02-14 at 17.26.11.png");
+        ImageIcon icon = new ImageIcon("src/img/new.png");
         lblimage.setIcon(icon);
         add(lblimage, BorderLayout.WEST);
         lblimage.setVisible(true);
@@ -83,6 +83,7 @@ import static javax.swing.WindowConstants.DISPOSE_ON_CLOSE;
         add(btnPlaceOrder);
         add(btnBackTo);
         add(btnCancel);
+        getContentPane().setBackground(Color.gray);
         
     }
 }

@@ -99,6 +99,7 @@ public class Search extends JFrame {
         add(btnSearchOrder);
         add(btnSearchCustomer);
         add(btnExit);
+        getContentPane().setBackground(Color.gray);
         
         add(panel);
         
