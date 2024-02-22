@@ -20,12 +20,12 @@ import static javax.swing.WindowConstants.DISPOSE_ON_CLOSE;
  * @author nandinusaminda
  */
 public class Search extends JFrame {
-    private JButton btnSearchBest;
-    private JButton btnSearchOrder;
-    private JButton btnSearchCustomer;
-    private JButton btnExit;
+    private final JButton btnSearchBest;
+    private final JButton btnSearchOrder;
+    private final JButton btnSearchCustomer;
+    private final JButton btnExit;
     
-    private JLabel lblHome;
+    private final JLabel lblHome;
     
     public Search(){
         setTitle("Search");

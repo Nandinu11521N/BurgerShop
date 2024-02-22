@@ -18,13 +18,13 @@ import static javax.swing.WindowConstants.DISPOSE_ON_CLOSE;
  * @author nandinusaminda
  */
 public class ViewOrders extends JFrame {
-    private JButton btnDeliveredOrders;
-    private JButton btnPreparingOrders;
-    private JButton btnCanceledOrders;
-    private JButton btnExit;
+    private final JButton btnDeliveredOrders;
+    private final JButton btnPreparingOrders;
+    private final JButton btnCanceledOrders;
+    private final JButton btnExit;
     
-    private JLabel lblHome;
-    private JLabel lblimage;
+    private final JLabel lblHome;
+    private final JLabel lblimage;
     
     public ViewOrders(){
         setTitle("View");

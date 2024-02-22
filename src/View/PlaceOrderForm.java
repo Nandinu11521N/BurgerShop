@@ -7,26 +7,17 @@ package View;
 
 
 import Controller.OrderController;
-import static Controller.OrderController.checkNumber;
-import static Controller.OrderController.extendList;
-import static Controller.OrderController.getBurger;
-import static Controller.OrderController.getLastOrderID;
-import static Controller.OrderController.getNumber;
-import static Controller.OrderController.orders;
-import static Controller.OrderController.getTotal;
 import Model.OrderDetails;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.Scanner;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import static javax.swing.WindowConstants.DISPOSE_ON_CLOSE;
-import static javax.swing.WindowConstants.EXIT_ON_CLOSE;
 
 /**
  *
@@ -50,9 +41,6 @@ public class PlaceOrderForm extends JFrame {
         private final JTextField txtName;
         private final JTextField txtQuantity;
         private final JTextField txtTotal;
-    private String result;
-    private String duplicateName;
-        
 
     public PlaceOrderForm(){
         setTitle("Place Order Form");
