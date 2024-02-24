@@ -1,0 +1,441 @@
+
+Å
+java:S1192"¨Define a constant instead of duplicating this literal "			||==========================================================================================||
+
+
+
+
+
+" 3 times.(Üæ½êûÿÿÿÿ
+b
+java:S1192c"GDefine a constant instead of duplicating this literal "
+
+
+
+
+" 13 times.(é×©·ÿÿÿÿÿ
+ 
+java:S1192("ŠDefine a constant instead of duplicating this literal "                                %-21s                          %-21s
+
+
+
+
+" 3 times.(ñm
+[
+java:S1192"EDefine a constant instead of duplicating this literal "
+
+
+
+" 4 times.(áÀìÏ
+[
+java:S11925"EDefine a constant instead of duplicating this literal "
+
+
+" 13 times.(¦¯Å¢
+“
+java:S1192"wDefine a constant instead of duplicating this literal "Invalid input. Please enter 'y' for Yes or 'n' for No." 7 times.(æøÄ´ıÿÿÿÿ
+Á
+java:S1192‡"¤Define a constant instead of duplicating this literal "			||==========================================================================================||
+
+" 3 times.(ˆ® ˆúÿÿÿÿ
+F
+java:S1066Ó"/Merge this if statement with the enclosing one.(ÑŞâ
+g
+java:S1104"RMake orders a static final constant or non-public and provide accessors if needed.(œ‘©C
+A
+java:S1444",Make this "public static orders" field final(œ‘©C
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(º›°Î
+>
+java:S2189•""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ
+8
+java:S2189""Add an end condition to this loop.(æ†—·
+>
+java:S2189á""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ
+P
+java:S1118":Add a private constructor to hide the implicit public one.(™ ¨Œ
+Q
+java:S1119";Refactor the code to remove this label and the need for it.(æ†—·
+/
+java:S1065"Remove this unused label.(æ†—·
+@	java:S106"+Replace this use of System.out by a logger.(áÀìÏ
+E	java:S106 "+Replace this use of System.out by a logger.(ÂÏßøûÿÿÿÿ
+U
+java:S2479 ":Remove the non-escaped \u0009 character from this literal.(ÂÏßøûÿÿÿÿ
+E	java:S106!"+Replace this use of System.out by a logger.(”ÙÊºøÿÿÿÿ
+U
+java:S2479!":Remove the non-escaped \u0009 character from this literal.(”ÙÊºøÿÿÿÿ
+@	java:S106""+Replace this use of System.out by a logger.(¼“Â
+P
+java:S2479"":Remove the non-escaped \u0009 character from this literal.(¼“Â
+E	java:S106#"+Replace this use of System.out by a logger.(»àº¬úÿÿÿÿ
+U
+java:S2479#":Remove the non-escaped \u0009 character from this literal.(»àº¬úÿÿÿÿ
+E	java:S106$"+Replace this use of System.out by a logger.(¤Ëùûüÿÿÿÿ
+U
+java:S2479$":Remove the non-escaped \u0009 character from this literal.(¤Ëùûüÿÿÿÿ
+@	java:S106%"+Replace this use of System.out by a logger.(ß’Æ 
+P
+java:S2479%":Remove the non-escaped \u0009 character from this literal.(ß’Æ 
+@	java:S106&"+Replace this use of System.out by a logger.(í»ˆ 
+P
+java:S2479&":Remove the non-escaped \u0009 character from this literal.(í»ˆ 
+E	java:S106'"+Replace this use of System.out by a logger.(Ÿ¤©ûÿÿÿÿ
+U
+java:S2479'":Remove the non-escaped \u0009 character from this literal.(Ÿ¤©ûÿÿÿÿ
+f
+java:S3457("Q%n should be used in place of \n to produce the platform-specific line separator.(ñm
+?	java:S106("+Replace this use of System.out by a logger.(ñm
+l
+java:S3457)"Q%n should be used in place of \n to produce the platform-specific line separator.(ÍÛØÎşÿÿÿÿ
+E	java:S106)"+Replace this use of System.out by a logger.(ÍÛØÎşÿÿÿÿ
+P	java:S125("<This block of commented-out lines of code should be removed.(ñm
+l
+java:S3457*"Q%n should be used in place of \n to produce the platform-specific line separator.(ä¿óşøÿÿÿÿ
+E	java:S106*"+Replace this use of System.out by a logger.(ä¿óşøÿÿÿÿ
+g
+java:S3457+"Q%n should be used in place of \n to produce the platform-specific line separator.(Ä“¦”
+@	java:S106+"+Replace this use of System.out by a logger.(Ä“¦”
+@	java:S1061"+Replace this use of System.out by a logger.(‚Î¯
+@	java:S1063"+Replace this use of System.out by a logger.(Îœò—
+@	java:S1064"+Replace this use of System.out by a logger.(ÚÂâ
+@	java:S1065"+Replace this use of System.out by a logger.(¦¯Å¢
+f	java:S128D"LEnd this switch case with an unconditional break, return or throw statement.(ıæÅ­şÿÿÿÿ
+E	java:S106D"+Replace this use of System.out by a logger.(ıæÅ­şÿÿÿÿ
+@	java:S106E"+Replace this use of System.out by a logger.(ß¹àî
+P
+java:S2479E":Remove the non-escaped \u0009 character from this literal.(ß¹àî
+@	java:S106F"+Replace this use of System.out by a logger.(Õ Êÿ
+P
+java:S2479F":Remove the non-escaped \u0009 character from this literal.(Õ Êÿ
+E	java:S106G"+Replace this use of System.out by a logger.(Ô³²Åÿÿÿÿÿ
+U
+java:S2479G":Remove the non-escaped \u0009 character from this literal.(Ô³²Åÿÿÿÿÿ
+@	java:S106H"+Replace this use of System.out by a logger.(êô‘ª
+P
+java:S2479H":Remove the non-escaped \u0009 character from this literal.(êô‘ª
+E	java:S106I"+Replace this use of System.out by a logger.(ØÛğÿùÿÿÿÿ
+U
+java:S2479I":Remove the non-escaped \u0009 character from this literal.(ØÛğÿùÿÿÿÿ
+@	java:S106J"+Replace this use of System.out by a logger.(­—ÖÆ
+P
+java:S2479J":Remove the non-escaped \u0009 character from this literal.(­—ÖÆ
+?	java:S106Q"+Replace this use of System.out by a logger.(¬ “
+O
+java:S2479Q":Remove the non-escaped \u0009 character from this literal.(¬ “
+@	java:S106U"+Replace this use of System.out by a logger.(Îœò—
+@	java:S106V"+Replace this use of System.out by a logger.(ÚÂâ
+E	java:S106Z"+Replace this use of System.out by a logger.(÷ÆÉ·ÿÿÿÿÿ
+U
+java:S2479Z":Remove the non-escaped \u0009 character from this literal.(÷ÆÉ·ÿÿÿÿÿ
+@	java:S106["+Replace this use of System.out by a logger.(°µ´ü
+P
+java:S2479[":Remove the non-escaped \u0009 character from this literal.(°µ´ü
+E	java:S106\"+Replace this use of System.out by a logger.(ÍÊ‘Êúÿÿÿÿ
+U
+java:S2479\":Remove the non-escaped \u0009 character from this literal.(ÍÊ‘Êúÿÿÿÿ
+@	java:S106]"+Replace this use of System.out by a logger.(õú«ã
+P
+java:S2479]":Remove the non-escaped \u0009 character from this literal.(õú«ã
+@	java:S106^"+Replace this use of System.out by a logger.(“ûÆÌ
+P
+java:S2479^":Remove the non-escaped \u0009 character from this literal.(“ûÆÌ
+@	java:S106_"+Replace this use of System.out by a logger.(‹Øê
+P
+java:S2479_":Remove the non-escaped \u0009 character from this literal.(‹Øê
+?	java:S106`"+Replace this use of System.out by a logger.(»Î´
+O
+java:S2479`":Remove the non-escaped \u0009 character from this literal.(»Î´
+E	java:S106a"+Replace this use of System.out by a logger.(Ò…ıÿÿÿÿ
+U
+java:S2479a":Remove the non-escaped \u0009 character from this literal.(Ò…ıÿÿÿÿ
+E	java:S106c"+Replace this use of System.out by a logger.(é×©·ÿÿÿÿÿ
+U
+java:S2479c":Remove the non-escaped \u0009 character from this literal.(é×©·ÿÿÿÿÿ
+@	java:S106i"+Replace this use of System.out by a logger.(ÜûÁÅ
+V	java:S125d"<This block of commented-out lines of code should be removed.(äùôûÿÿÿÿ
+Q	java:S125g"<This block of commented-out lines of code should be removed.(¦£Éª
+@	java:S106k"+Replace this use of System.out by a logger.(ÜûÁÅ
+E	java:S106m"+Replace this use of System.out by a logger.(øÛ½¡ıÿÿÿÿ
+@	java:S106n"+Replace this use of System.out by a logger.(áÀìÏ
+E	java:S106q"+Replace this use of System.out by a logger.(‹¹•ûÿÿÿÿ
+U
+java:S2479q":Remove the non-escaped \u0009 character from this literal.(‹¹•ûÿÿÿÿ
+Q	java:S125z"<This block of commented-out lines of code should be removed.(ï¼Ğ
+F	java:S106€"+Replace this use of System.out by a logger.(ñ«ççşÿÿÿÿ
+V
+java:S2479€":Remove the non-escaped \u0009 character from this literal.(ñ«ççşÿÿÿÿ
+@	java:S106"+Replace this use of System.out by a logger.(ëÀÛt
+A	java:S106ƒ"+Replace this use of System.out by a logger.(Æô®
+F	java:S106‡"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ
+F	java:S106"+Replace this use of System.out by a logger.(æøÄ´ıÿÿÿÿ
+A	java:S106"+Replace this use of System.out by a logger.(¦¯Å¢
+F	java:S106—"+Replace this use of System.out by a logger.(æøÄ´ıÿÿÿÿ
+A	java:S106˜"+Replace this use of System.out by a logger.(¦¯Å¢
+n
+java:S3776®"RRefactor this method to reduce its Cognitive Complexity from 39 to the 15 allowed.(Ò¾ôºùÿÿÿÿ
+F	java:S106¯"+Replace this use of System.out by a logger.(ÄÊüøûÿÿÿÿ
+V
+java:S2479¯":Remove the non-escaped \u0009 character from this literal.(ÄÊüøûÿÿÿÿ
+F	java:S106°"+Replace this use of System.out by a logger.(œÌ¤¹ùÿÿÿÿ
+V
+java:S2479°":Remove the non-escaped \u0009 character from this literal.(œÌ¤¹ùÿÿÿÿ
+A	java:S106±"+Replace this use of System.out by a logger.(„Áú
+Q
+java:S2479±":Remove the non-escaped \u0009 character from this literal.(„Áú
+F	java:S106²"+Replace this use of System.out by a logger.(Õ¤èŒÿÿÿÿÿ
+V
+java:S2479²":Remove the non-escaped \u0009 character from this literal.(Õ¤èŒÿÿÿÿÿ
+F	java:S106³"+Replace this use of System.out by a logger.(ôÎ Îøÿÿÿÿ
+V
+java:S2479³":Remove the non-escaped \u0009 character from this literal.(ôÎ Îøÿÿÿÿ
+F	java:S106´"+Replace this use of System.out by a logger.(øÛÆºıÿÿÿÿ
+V
+java:S2479´":Remove the non-escaped \u0009 character from this literal.(øÛÆºıÿÿÿÿ
+F	java:S106µ"+Replace this use of System.out by a logger.(í€í©üÿÿÿÿ
+V
+java:S2479µ":Remove the non-escaped \u0009 character from this literal.(í€í©üÿÿÿÿ
+F	java:S106¶"+Replace this use of System.out by a logger.(½â¯®ùÿÿÿÿ
+V
+java:S2479¶":Remove the non-escaped \u0009 character from this literal.(½â¯®ùÿÿÿÿ
+F	java:S106¸"+Replace this use of System.out by a logger.(£­»‚ùÿÿÿÿ
+V
+java:S2479¸":Remove the non-escaped \u0009 character from this literal.(£­»‚ùÿÿÿÿ
+F	java:S106¹"+Replace this use of System.out by a logger.(º¥óùÿÿÿÿ
+V
+java:S2479¹":Remove the non-escaped \u0009 character from this literal.(º¥óùÿÿÿÿ
+@	java:S106º"+Replace this use of System.out by a logger.(ÇìŸ`
+P
+java:S2479º":Remove the non-escaped \u0009 character from this literal.(ÇìŸ`
+F	java:S106»"+Replace this use of System.out by a logger.(£­»‚ùÿÿÿÿ
+V
+java:S2479»":Remove the non-escaped \u0009 character from this literal.(£­»‚ùÿÿÿÿ
+@	java:S106ì"+Replace this use of System.out by a logger.(÷ùĞ@
+F	java:S106ğ"+Replace this use of System.out by a logger.(£­»‚ùÿÿÿÿ
+F	java:S106ô"+Replace this use of System.out by a logger.(£ÅŠãúÿÿÿÿ
+@	java:S106ù"+Replace this use of System.out by a logger.(ëÀÛt
+@	java:S106ı"+Replace this use of System.out by a logger.(ëÀÛt
+F	java:S106€"+Replace this use of System.out by a logger.(æøÄ´ıÿÿÿÿ
+A	java:S106"+Replace this use of System.out by a logger.(¦¯Å¢
+n
+java:S3776†"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(¿Ã¹îúÿÿÿÿ
+F	java:S106‡"+Replace this use of System.out by a logger.(ˆ® ˆúÿÿÿÿ
+V
+java:S2479‡":Remove the non-escaped \u0009 character from this literal.(ˆ® ˆúÿÿÿÿ
+F	java:S106ˆ"+Replace this use of System.out by a logger.(…ÍõËúÿÿÿÿ
+V
+java:S2479ˆ":Remove the non-escaped \u0009 character from this literal.(…ÍõËúÿÿÿÿ
+@	java:S106‰"+Replace this use of System.out by a logger.(§§ño
+P
+java:S2479‰":Remove the non-escaped \u0009 character from this literal.(§§ño
+F	java:S106Š"+Replace this use of System.out by a logger.(õß“µÿÿÿÿÿ
+V
+java:S2479Š":Remove the non-escaped \u0009 character from this literal.(õß“µÿÿÿÿÿ
+F	java:S106‹"+Replace this use of System.out by a logger.(è·Œøøÿÿÿÿ
+V
+java:S2479‹":Remove the non-escaped \u0009 character from this literal.(è·Œøøÿÿÿÿ
+A	java:S106Œ"+Replace this use of System.out by a logger.(À£—¢
+Q
+java:S2479Œ":Remove the non-escaped \u0009 character from this literal.(À£—¢
+F	java:S106"+Replace this use of System.out by a logger.(îìÓüÿÿÿÿ
+V
+java:S2479":Remove the non-escaped \u0009 character from this literal.(îìÓüÿÿÿÿ
+F	java:S106"+Replace this use of System.out by a logger.(Üæ½êûÿÿÿÿ
+V
+java:S2479":Remove the non-escaped \u0009 character from this literal.(Üæ½êûÿÿÿÿ
+F	java:S106"+Replace this use of System.out by a logger.(®ıŸøúÿÿÿÿ
+F	java:S106¥"+Replace this use of System.out by a logger.(ˆšÑÖüÿÿÿÿ
+F	java:S106¦"+Replace this use of System.out by a logger.(é£×’ıÿÿÿÿ
+h
+java:S3457§"Q%n should be used in place of \n to produce the platform-specific line separator.(È…‚µ
+A	java:S106§"+Replace this use of System.out by a logger.(È…‚µ
+F	java:S106¨"+Replace this use of System.out by a logger.(±¤Ìïıÿÿÿÿ
+h
+java:S3457©"Q%n should be used in place of \n to produce the platform-specific line separator.(áí±¯
+A	java:S106©"+Replace this use of System.out by a logger.(áí±¯
+A	java:S106ª"+Replace this use of System.out by a logger.(ç‘Š†
+A	java:S106­"+Replace this use of System.out by a logger.(Éşî
+@	java:S106²"+Replace this use of System.out by a logger.(ëÀÛt
+F	java:S106¸"+Replace this use of System.out by a logger.(æøÄ´ıÿÿÿÿ
+A	java:S106¹"+Replace this use of System.out by a logger.(¦¯Å¢
+F	java:S106¾"+Replace this use of System.out by a logger.(®€­éøÿÿÿÿ
+@	java:S106Ã"+Replace this use of System.out by a logger.(ëÀÛt
+F	java:S106É"+Replace this use of System.out by a logger.(æøÄ´ıÿÿÿÿ
+A	java:S106Ê"+Replace this use of System.out by a logger.(¦¯Å¢
+h
+java:S3776Ğ"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(ÍëÜ
+Q
+java:S1854æ":Remove this useless assignment to local variable "tIndex".(¦¨—µ
+F	java:S106Ñ"+Replace this use of System.out by a logger.(Ü½¸±øÿÿÿÿ
+V
+java:S2479Ñ":Remove the non-escaped \u0009 character from this literal.(Ü½¸±øÿÿÿÿ
+F	java:S106Ò"+Replace this use of System.out by a logger.(œíÜşÿÿÿÿ
+V
+java:S2479Ò":Remove the non-escaped \u0009 character from this literal.(œíÜşÿÿÿÿ
+A	java:S106Ó"+Replace this use of System.out by a logger.(”ƒûŸ
+Q
+java:S2479Ó":Remove the non-escaped \u0009 character from this literal.(”ƒûŸ
+A	java:S106Ô"+Replace this use of System.out by a logger.(ÛØ
+Q
+java:S2479Ô":Remove the non-escaped \u0009 character from this literal.(ÛØ
+A	java:S106Õ"+Replace this use of System.out by a logger.(‰º¡¡
+Q
+java:S2479Õ":Remove the non-escaped \u0009 character from this literal.(‰º¡¡
+F	java:S106Ö"+Replace this use of System.out by a logger.(ËÁËûÿÿÿÿ
+V
+java:S2479Ö":Remove the non-escaped \u0009 character from this literal.(ËÁËûÿÿÿÿ
+F	java:S106×"+Replace this use of System.out by a logger.(ĞÕÑ…øÿÿÿÿ
+V
+java:S2479×":Remove the non-escaped \u0009 character from this literal.(ĞÕÑ…øÿÿÿÿ
+A	java:S106Ø"+Replace this use of System.out by a logger.(Ç÷Ìö
+Q
+java:S2479Ø":Remove the non-escaped \u0009 character from this literal.(Ç÷Ìö
+F	java:S106Ú"+Replace this use of System.out by a logger.(Çÿš•ùÿÿÿÿ
+B
+java:S1481á"+Remove this unused "tIndex" local variable.(ø‰¡ı
+F	java:S106è"+Replace this use of System.out by a logger.(±§Ğ§şÿÿÿÿ
+F	java:S106é"+Replace this use of System.out by a logger.(Â¶—Õûÿÿÿÿ
+A	java:S106ê"+Replace this use of System.out by a logger.(—ÃŸÚ
+A	java:S106ë"+Replace this use of System.out by a logger.(ıÎ€ú
+F	java:S106ì"+Replace this use of System.out by a logger.(Á±¢İüÿÿÿÿ
+F	java:S106í"+Replace this use of System.out by a logger.(ÎÍËüÿÿÿÿ
+F	java:S106î"+Replace this use of System.out by a logger.(ÚöØ–üÿÿÿÿ
+A	java:S106ï"+Replace this use of System.out by a logger.(ò”Ù‚
+h
+java:S3457ù"Q%n should be used in place of \n to produce the platform-specific line separator.(à¬ÿı
+A	java:S106ù"+Replace this use of System.out by a logger.(à¬ÿı
+F	java:S106ş"+Replace this use of System.out by a logger.(å¤Íºüÿÿÿÿ
+F	java:S106ÿ"+Replace this use of System.out by a logger.(É¾¡Üıÿÿÿÿ
+@	java:S106„"+Replace this use of System.out by a logger.(ëÀÛt
+F	java:S106Š"+Replace this use of System.out by a logger.(æøÄ´ıÿÿÿÿ
+A	java:S106‹"+Replace this use of System.out by a logger.(¦¯Å¢
+A	java:S106"+Replace this use of System.out by a logger.(˜äÊï
+F	java:S106‘"+Replace this use of System.out by a logger.(É¾¡Üıÿÿÿÿ
+@	java:S106–"+Replace this use of System.out by a logger.(ëÀÛt
+F	java:S106œ"+Replace this use of System.out by a logger.(æøÄ´ıÿÿÿÿ
+A	java:S106"+Replace this use of System.out by a logger.(¦¯Å¢
+F	java:S106¥"+Replace this use of System.out by a logger.(ˆ® ˆúÿÿÿÿ
+V
+java:S2479¥":Remove the non-escaped \u0009 character from this literal.(ˆ® ˆúÿÿÿÿ
+A	java:S106¦"+Replace this use of System.out by a logger.(Ñ½¡Ó
+Q
+java:S2479¦":Remove the non-escaped \u0009 character from this literal.(Ñ½¡Ó
+F	java:S106§"+Replace this use of System.out by a logger.(Şä…¸øÿÿÿÿ
+V
+java:S2479§":Remove the non-escaped \u0009 character from this literal.(Şä…¸øÿÿÿÿ
+F	java:S106¨"+Replace this use of System.out by a logger.(ç™¼ªşÿÿÿÿ
+V
+java:S2479¨":Remove the non-escaped \u0009 character from this literal.(ç™¼ªşÿÿÿÿ
+@	java:S106©"+Replace this use of System.out by a logger.(ì·A
+P
+java:S2479©":Remove the non-escaped \u0009 character from this literal.(ì·A
+A	java:S106ª"+Replace this use of System.out by a logger.(ö›Ì´
+Q
+java:S2479ª":Remove the non-escaped \u0009 character from this literal.(ö›Ì´
+F	java:S106«"+Replace this use of System.out by a logger.(–¿ø©ùÿÿÿÿ
+V
+java:S2479«":Remove the non-escaped \u0009 character from this literal.(–¿ø©ùÿÿÿÿ
+F	java:S106¬"+Replace this use of System.out by a logger.(Üæ½êûÿÿÿÿ
+V
+java:S2479¬":Remove the non-escaped \u0009 character from this literal.(Üæ½êûÿÿÿÿ
+F	java:S106­"+Replace this use of System.out by a logger.(âÎ†ùÿÿÿÿ
+@	java:S106®"+Replace this use of System.out by a logger.(Ì‡—$
+@	java:S106¯"+Replace this use of System.out by a logger.(Ï–øj
+F	java:S106°"+Replace this use of System.out by a logger.(°ïİ‡úÿÿÿÿ
+W
+java:S1854Ğ";Remove this useless assignment to local variable "orderId".(·±ïùùÿÿÿÿ
+@	java:S106È"+Replace this use of System.out by a logger.(îûÊ%
+h
+java:S3457É"Q%n should be used in place of \n to produce the platform-specific line separator.(÷ğ¾
+A	java:S106É"+Replace this use of System.out by a logger.(÷ğ¾
+@	java:S106Ê"+Replace this use of System.out by a logger.(îûÊ%
+H
+java:S1481Ğ",Remove this unused "orderId" local variable.(·±ïùùÿÿÿÿ
+A	java:S106Ô"+Replace this use of System.out by a logger.(´Ãµ´
+F	java:S106Õ"+Replace this use of System.out by a logger.(¨¹šµúÿÿÿÿ
+A	java:S106Ö"+Replace this use of System.out by a logger.(´Ãµ´
+A	java:S106Û"+Replace this use of System.out by a logger.(’°¨û
+A	java:S106â"+Replace this use of System.out by a logger.(Ï•ì·
+@	java:S106è"+Replace this use of System.out by a logger.(ëÀÛt
+@	java:S106ì"+Replace this use of System.out by a logger.(ëÀÛt
+F	java:S106ï"+Replace this use of System.out by a logger.(æøÄ´ıÿÿÿÿ
+A	java:S106ğ"+Replace this use of System.out by a logger.(¦¯Å¢
+A	java:S106ö"+Replace this use of System.out by a logger.(“ñğê
+A	java:S106÷"+Replace this use of System.out by a logger.(ÂÌê
+F	java:S106ø"+Replace this use of System.out by a logger.(øñæçÿÿÿÿÿ
+@	java:S106ş"+Replace this use of System.out by a logger.(ëÀÛt
+F	java:S106„"+Replace this use of System.out by a logger.(æøÄ´ıÿÿÿÿ
+A	java:S106…"+Replace this use of System.out by a logger.(¦¯Å¢
+n
+java:S3776‰"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(´ÌÂÏùÿÿÿÿ
+F	java:S106Š"+Replace this use of System.out by a logger.(ˆ® ˆúÿÿÿÿ
+V
+java:S2479Š":Remove the non-escaped \u0009 character from this literal.(ˆ® ˆúÿÿÿÿ
+F	java:S106‹"+Replace this use of System.out by a logger.(ë±™ùşÿÿÿÿ
+V
+java:S2479‹":Remove the non-escaped \u0009 character from this literal.(ë±™ùşÿÿÿÿ
+@	java:S106Œ"+Replace this use of System.out by a logger.(òğ—u
+P
+java:S2479Œ":Remove the non-escaped \u0009 character from this literal.(òğ—u
+A	java:S106"+Replace this use of System.out by a logger.(øúª±
+Q
+java:S2479":Remove the non-escaped \u0009 character from this literal.(øúª±
+F	java:S106"+Replace this use of System.out by a logger.(œ«‡íûÿÿÿÿ
+V
+java:S2479":Remove the non-escaped \u0009 character from this literal.(œ«‡íûÿÿÿÿ
+F	java:S106"+Replace this use of System.out by a logger.(à¸ë¨ÿÿÿÿÿ
+V
+java:S2479":Remove the non-escaped \u0009 character from this literal.(à¸ë¨ÿÿÿÿÿ
+F	java:S106"+Replace this use of System.out by a logger.(šÀõÅøÿÿÿÿ
+V
+java:S2479":Remove the non-escaped \u0009 character from this literal.(šÀõÅøÿÿÿÿ
+F	java:S106‘"+Replace this use of System.out by a logger.(Üæ½êûÿÿÿÿ
+V
+java:S2479‘":Remove the non-escaped \u0009 character from this literal.(Üæ½êûÿÿÿÿ
+F	java:S106’"+Replace this use of System.out by a logger.(Ò×óÃüÿÿÿÿ
+A	java:S106“"+Replace this use of System.out by a logger.(Ñ²ƒ
+F	java:S106›"+Replace this use of System.out by a logger.(ëÙšäøÿÿÿÿ
+@	java:S106"+Replace this use of System.out by a logger.(†©Œ$
+F	java:S106"+Replace this use of System.out by a logger.(€›ïÂúÿÿÿÿ
+A	java:S106Ÿ"+Replace this use of System.out by a logger.(Ø°ß¦
+A	java:S106 "+Replace this use of System.out by a logger.(£îË˜
+F	java:S106­"+Replace this use of System.out by a logger.(Ïº¶ñøÿÿÿÿ
+@	java:S106³"+Replace this use of System.out by a logger.(ëÀÛt
+F	java:S106¹"+Replace this use of System.out by a logger.(å²ÄÃÿÿÿÿÿ
+A	java:S106º"+Replace this use of System.out by a logger.(¦¯Å¢
+F	java:S106Ï"+Replace this use of System.out by a logger.(ºçôüÿÿÿÿ
+F	java:S106Ğ"+Replace this use of System.out by a logger.(œ´çèıÿÿÿÿ
+A	java:S106Ñ"+Replace this use of System.out by a logger.(ĞúÇ÷
+F	java:S106Ò"+Replace this use of System.out by a logger.(Ïºüÿÿÿÿ
+@	java:S106Ó"+Replace this use of System.out by a logger.(¬öØx
+A	java:S106Ô"+Replace this use of System.out by a logger.(Ô‡ğİ
+F	java:S106Õ"+Replace this use of System.out by a logger.(œşøıÿÿÿÿ
+F	java:S106×"+Replace this use of System.out by a logger.(ÃÀé úÿÿÿÿ
+A	java:S106è"+Replace this use of System.out by a logger.(óËÄñ
+A	java:S106é"+Replace this use of System.out by a logger.(Á¦åú
+A	java:S106ë"+Replace this use of System.out by a logger.(ô¼â•
+A	java:S106ì"+Replace this use of System.out by a logger.(„‘¦
+F	java:S106í"+Replace this use of System.out by a logger.(ÕÔº¿úÿÿÿÿ
+A	java:S106ï"+Replace this use of System.out by a logger.(ŸÊı±
+F	java:S106ô"+Replace this use of System.out by a logger.(¡ØÂüÿÿÿÿ
+F	java:S106õ"+Replace this use of System.out by a logger.(ìŸÓ’ıÿÿÿÿ
+A	java:S106ö"+Replace this use of System.out by a logger.(€ÌÌÇ
+A	java:S106û"+Replace this use of System.out by a logger.(Ûé·¹
+A	java:S106ü"+Replace this use of System.out by a logger.(Á¦åú
+A	java:S106ş"+Replace this use of System.out by a logger.(ô¼â•
+A	java:S106ÿ"+Replace this use of System.out by a logger.(„‘¦
+F	java:S106€"+Replace this use of System.out by a logger.(Ê¢Òùÿÿÿÿ
+A	java:S106"+Replace this use of System.out by a logger.(Å‰‡­
+F	java:S106‚"+Replace this use of System.out by a logger.(£¥ëÙıÿÿÿÿ
+A	java:S106ƒ"+Replace this use of System.out by a logger.(îøğ…
+F	java:S106…"+Replace this use of System.out by a logger.(”¿ä‚ıÿÿÿÿ
+F	java:S106"+Replace this use of System.out by a logger.(‡¾úêıÿÿÿÿ
+A	java:S106–"+Replace this use of System.out by a logger.(€¬ğ
+@	java:S106œ"+Replace this use of System.out by a logger.(ëÀÛt
+Q
+java:S6397«"5Replace this character class by the character itself.(Á¿©ÿÿÿÿÿ
+A	java:S106¶"+Replace this use of System.out by a logger.(¨Ë†Ö
+A	java:S106¼"+Replace this use of System.out by a logger.(‘Ôîç
+â
+java:S6541®"ÅA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 78 to 64, Complexity from 19 to 14, Nesting Level from 5 to 2, Number of Variables from 13 to 6.(Ò¾ôºùÿÿÿÿ
+Ü
+java:S6541Ğ"ÅA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 79 to 64, Complexity from 15 to 14, Nesting Level from 4 to 2, Number of Variables from 11 to 6.(ÍëÜ

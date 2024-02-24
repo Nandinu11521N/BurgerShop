@@ -111,16 +111,12 @@ public class SearchCustomer extends JFrame {
         DefaultTableModel model = new DefaultTableModel(columns, 0) {
             @Override
             public Class<?> getColumnClass(int columnIndex) {
-                switch (columnIndex) {
-                    case 0:
-                        return String.class;
-                    case 1:
-                        return Integer.class;
-                    case 2:
-                        return Double.class;
-                    default:
-                        return Object.class;
-                }
+                return switch (columnIndex) {
+                    case 0 -> String.class;
+                    case 1 -> Integer.class;
+                    case 2 -> Double.class;
+                    default -> Object.class;
+                };
             }
         };
         table = new JTable(model);

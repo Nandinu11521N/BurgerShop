@@ -119,10 +119,6 @@ public class OrderController {
                int lastIndex = orders.size() - 1;
 
                orders.get(lastIndex).setOrderIDs(orderId);
-               //orders.get(lastIndex).setNumbers(number);
-               //orders.get(lastIndex).setNames(name);
-               //orders.get(lastIndex).setBurgers(burgerQuantity);
-               //orders.get(lastIndex).setTotals(totalValue);
                orders.get(lastIndex).setOrderStatusArray(OrderDetails.STATUS_PREPARING);
 
                System.out.println("						Your order has been entered into the system successfully...\n\n\n");
@@ -280,15 +276,12 @@ public class OrderController {
 			int burger = orders.get(index).getBurgers();
 			double total = orders.get(index).getTotals();
 
-			if(orders.get(index).getOrderStatusArray() == OrderDetails.STATUS_PREPARING){
-				statusString = "PREPARING";
-			}else if(orders.get(index).getOrderStatusArray() == OrderDetails.STATUS_DELIVERED){
-				statusString = "DELIVERED";
-			}else if(orders.get(index).getOrderStatusArray() == OrderDetails.STATUS_CANCEL){
-				statusString = "CANCELLED";
-			}else{
-				statusString = "INVALID";
-			}
+                        statusString = switch (orders.get(index).getOrderStatusArray()) {
+                        case OrderDetails.STATUS_PREPARING -> "PREPARING";
+                        case OrderDetails.STATUS_DELIVERED -> "DELIVERED";
+                        case OrderDetails.STATUS_CANCEL -> "CANCELLED";
+                        default -> "INVALID";
+                    };
 
         System.out.println("\n\n");
         System.out.println("           |--------------------------------------------------------------------------------------------------------------------------------------------------------|\n");
@@ -317,17 +310,21 @@ public class OrderController {
         while(true){
             System.out.print("\n\n\nInvalid Order ID.....Do You Want To Enter Again ? (y/n) :- ");
             String yesOrNo = input.next();
-            if(yesOrNo.equals("y")){
-                clearScreen();
-                searchOrder();
-                System.out.println("\n\n\n\n\n");
-            }else if(yesOrNo.equals("n")){
-                clearScreen();
-                startSystem();
-            }else{
-                clearScreen();
-                System.out.println("Invalid input. Please enter 'y' for Yes or 'n' for No.");
-                System.out.println("\n\n\n");
+            switch (yesOrNo) {
+                case "y" -> {
+                    clearScreen();
+                    searchOrder();
+                    System.out.println("\n\n\n\n\n");
+                }
+                case "n" -> {
+                    clearScreen();
+                    startSystem();
+                }
+                default -> {
+                    clearScreen();
+                    System.out.println("Invalid input. Please enter 'y' for Yes or 'n' for No.");
+                    System.out.println("\n\n\n");
+                }
             }
         }
     }
@@ -433,17 +430,10 @@ public static void viewOrders(){
     int num = input.nextInt();
 
     switch(num){
-        case 1:
-            displayOrdersByStatus(1, "Delivered Orders");
-            break;
-        case 2:
-            displayOrdersByStatus(0, "Preparing Orders");
-            break;
-        case 3:
-            displayOrdersByStatus(2, "Cancel Orders");
-            break;
-        default:
-            handleInvalidInput();
+        case 1 -> displayOrdersByStatus(1, "Delivered Orders");
+        case 2 -> displayOrdersByStatus(0, "Preparing Orders");
+        case 3 -> displayOrdersByStatus(2, "Cancel Orders");
+        default -> handleInvalidInput();
     }
 
     while(true){
@@ -544,12 +534,10 @@ public static void updateOrder(){
             System.out.print("\t\t\tEnter Your Option :- ");
             int option = input.nextInt();
 
-            if(option == 1){
-                updateQuantity(index);
-            }else if(option == 2){
-                updateStatus(index);
-            }else{
-                handleInvalidInput();
+            switch (option) {
+                case 1 -> updateQuantity(index);
+                case 2 -> updateStatus(index);
+                default -> handleInvalidInput();
             }
         }
     }else if(index == -1){
@@ -601,15 +589,12 @@ private static void displayOrderDetails(int index){
 }
 
 private static String getStatusString(int index){
-    if(orders.get(index).getOrderStatusArray() == OrderDetails.STATUS_PREPARING){
-        return "PREPARING";
-    }else if(orders.get(index).getOrderStatusArray() == OrderDetails.STATUS_DELIVERED){
-        return "DELIVERED";
-    }else if(orders.get(index).getOrderStatusArray() == OrderDetails.STATUS_CANCEL){
-        return "CANCELLED";
-    }else{
-        return "INVALID";
-    }
+        return switch (orders.get(index).getOrderStatusArray()) {
+            case OrderDetails.STATUS_PREPARING -> "PREPARING";
+            case OrderDetails.STATUS_DELIVERED -> "DELIVERED";
+            case OrderDetails.STATUS_CANCEL -> "CANCELLED";
+            default -> "INVALID";
+        };
 }
 
 private static void updateQuantity(int index){
@@ -645,13 +630,13 @@ private static void updateStatus(int index){
     System.out.print("Enter New Order Status :- ");
     char newStatus = input.next().charAt(0);
 
-    if(newStatus == '0'){
-        orders.get(index).setOrderStatusArray(OrderDetails.STATUS_CANCEL);
-    }else if(newStatus == '1'){
-        orders.get(index).setOrderStatusArray(OrderDetails.STATUS_PREPARING);
-    }else if(newStatus == '2'){
-        orders.get(index).setOrderStatusArray(OrderDetails.STATUS_DELIVERED);
-    }
+        switch (newStatus) {
+            case '0' -> orders.get(index).setOrderStatusArray(OrderDetails.STATUS_CANCEL);
+            case '1' -> orders.get(index).setOrderStatusArray(OrderDetails.STATUS_PREPARING);
+            case '2' -> orders.get(index).setOrderStatusArray(OrderDetails.STATUS_DELIVERED);
+            default -> {
+            }
+        }
 
     System.out.println("\n\nNew Order Status :- " + getStatusString(index) + "\n\n\n");
     handleUpdateAnotherOrder();
@@ -662,16 +647,20 @@ private static void handleUpdateAnotherOrder(){
         System.out.print("Do You Want To Update Another Order Details ? (y/n) ");
         String yesOrNo = input.next();
 
-        if(yesOrNo.equals("y")){
-            clearScreen();
-            updateOrder();
-            System.out.println("\n\n\n\n\n");
-        }else if(yesOrNo.equals("n")){
-            clearScreen();
-            startSystem();
-        }else{
-            clearScreen();
-            handleInvalidInput();
+        switch (yesOrNo) {
+            case "y" -> {
+                clearScreen();
+                updateOrder();
+                System.out.println("\n\n\n\n\n");
+            }
+            case "n" -> {
+                clearScreen();
+                startSystem();
+            }
+            default -> {
+                clearScreen();
+                handleInvalidInput();
+            }
         }
     }
 }

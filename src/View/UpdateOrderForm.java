@@ -54,7 +54,7 @@ public class UpdateOrderForm extends JFrame {
         setLocationRelativeTo(null);
         setVisible(true);
         setLayout(null);
-        
+
         lblStatus = new JLabel("Order Status :");
         lblStatus.setFont(new Font("", Font.PLAIN, 20));
         lblStatus.setBounds(50, 200, 150, 30);
@@ -73,18 +73,18 @@ public class UpdateOrderForm extends JFrame {
         OrderDetails order = OrderController.getOrderById(orderId);
 
         if (order != null) {
-            txtCustomerID.setText(order.getNumbers()); 
-            txtName.setText(order.getNames()); 
-            txtQuantity.setEditable(true); 
-            txtQuantity.requestFocus(); 
-            txtTotal.setText(String.valueOf(order.getTotals())); 
+            txtCustomerID.setText(order.getNumbers());
+            txtName.setText(order.getNames());
+            txtQuantity.setEditable(true);
+            txtQuantity.requestFocus();
+            txtTotal.setText(String.valueOf(order.getTotals()));
             txtTotal.setEditable(false);
         } else {
             JOptionPane.showMessageDialog(null, "No data found for the entered order ID", "No Data Found", JOptionPane.INFORMATION_MESSAGE);
         }
     }
 });
-        
+
         lblCustomerID = new JLabel("Customer ID :");
         lblCustomerID.setFont(new Font("", Font.PLAIN, 20));
         lblCustomerID.setBounds(100, 400, 150, 30);
@@ -188,12 +188,12 @@ public class UpdateOrderForm extends JFrame {
         }
         int index = -1;
        
-        if (selectedStatus.equals("Processing....")) {
-            status = OrderDetails.STATUS_PREPARING;
-        } else if (selectedStatus.equals("Delivered....")) {
-            status = OrderDetails.STATUS_DELIVERED;
-        } else if (selectedStatus.equals("Canceled....")) {
-            status = OrderDetails.STATUS_CANCEL;
+        switch (selectedStatus) {
+            case "Processing...." -> status = OrderDetails.STATUS_PREPARING;
+            case "Delivered...." -> status = OrderDetails.STATUS_DELIVERED;
+            case "Canceled...." -> status = OrderDetails.STATUS_CANCEL;
+            default -> {
+            }
         }
         
         OrderDetails order = OrderController.getOrderById(orderId);

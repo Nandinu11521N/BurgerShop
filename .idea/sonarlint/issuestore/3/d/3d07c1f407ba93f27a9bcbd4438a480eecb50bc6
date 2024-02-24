@@ -1,0 +1,18 @@
+
+]
+java:S1192›"FDefine a constant instead of duplicating this literal "Error" 3 times.(ÊÌ×ª
+=
+java:S1604D"(Make this anonymous inner class a lambda(–Œ‘z
+D
+java:S1604°"(Make this anonymous inner class a lambda(€û¬£üÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ìºéÚ
+h
+java:S37762"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(Þè†Í
+G
+java:S1602|",Remove useless curly braces around statement(Ôæ…žûÿÿÿÿ
+X
+java:S3252¦"AUse static access with "javax.swing.SwingConstants" for "CENTER".(Ï¸Û†
+X
+java:S3252§"AUse static access with "javax.swing.SwingConstants" for "CENTER".(ÔàìØ
+A
+java:S1481½"*Remove this unused "index" local variable.(ÜÞøæ

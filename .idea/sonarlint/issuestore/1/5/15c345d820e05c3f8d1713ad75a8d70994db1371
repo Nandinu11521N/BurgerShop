@@ -1,0 +1,16 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ìºéÚ
+B
+java:S1602+",Remove useless curly braces around statement(¸×“Ý
+G
+java:S16024",Remove useless curly braces around statement(ºý´Ôúÿÿÿÿ
+B
+java:S1602<",Remove useless curly braces around statement(ðÈÌ
+G
+java:S1602D",Remove useless curly braces around statement(…çý†ýÿÿÿÿ
+B
+java:S1602L",Remove useless curly braces around statement(Ö†²¿
+W
+java:S3252W"AUse static access with "javax.swing.SwingConstants" for "CENTER".(Ï¸Û†
+W
+java:S3252X"AUse static access with "javax.swing.SwingConstants" for "CENTER".(ÔàìØ

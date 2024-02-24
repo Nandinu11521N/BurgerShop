@@ -1,0 +1,12 @@
+
+E
+java:S1066m"/Merge this if statement with the enclosing one.(—èﬁ‚
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ï∫È⁄
+h
+java:S3776!"RRefactor this method to reduce its Cognitive Complexity from 36 to the 15 allowed.(ÄÖ«≥
+B
+java:S1602-",Remove useless curly braces around statement(÷Ü≤ø
+W
+java:S32527"AUse static access with "javax.swing.SwingConstants" for "CENTER".(œ∏€Ü
+W
+java:S32528"AUse static access with "javax.swing.SwingConstants" for "CENTER".(‘‡Ïÿ

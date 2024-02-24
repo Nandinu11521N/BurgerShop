@@ -1,0 +1,14 @@
+
+>
+java:S16046"(Make this anonymous inner class a lambda(íÊç»
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ìºéÚ
+G
+java:S1602S",Remove useless curly braces around statement(Ôæ…žûÿÿÿÿ
+W
+java:S3252]"AUse static access with "javax.swing.SwingConstants" for "CENTER".(Ï¸Û†
+W
+java:S3252^"AUse static access with "javax.swing.SwingConstants" for "CENTER".(ÔàìØ
+W
+java:S3252h"AUse static access with "javax.swing.SwingConstants" for "CENTER".(¨ÞÜÛ
+W
+java:S3252i"AUse static access with "javax.swing.SwingConstants" for "CENTER".(çÏç¼

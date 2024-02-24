@@ -66,15 +66,13 @@ public class PlaceOrderForm extends JFrame {
 
         txtCustomerID = new JTextField();
         txtCustomerID.setBounds(200, 300, 200, 30);
-        txtCustomerID.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                String input1 = txtCustomerID.getText();
-                String result = OrderController.getNumber(input1);
-                if (result.equals(input1)) {
-                    System.out.println("Valid phone number: " + input1);
-                } else {
-                    JOptionPane.showMessageDialog(null, result, "Invalid Input", JOptionPane.ERROR_MESSAGE);
-                }
+        txtCustomerID.addActionListener((ActionEvent e) -> {
+            String input1 = txtCustomerID.getText();
+            String result = OrderController.getNumber(input1);
+            if (result.equals(input1)) {
+                System.out.println("Valid phone number: " + input1);
+            } else {
+                JOptionPane.showMessageDialog(null, result, "Invalid Input", JOptionPane.ERROR_MESSAGE);
             }
         });
 
@@ -84,14 +82,11 @@ public class PlaceOrderForm extends JFrame {
 
         txtName = new JTextField();
         txtName.setBounds(200, 400, 400, 30);
-        txtName.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                String input2 = txtName.getText();
-                String duplicateName = OrderController.checkNumber(input2);
-                if (duplicateName != null) {
-                    JOptionPane.showMessageDialog(null, "Duplicate name found: " + duplicateName, "Duplicate Name", JOptionPane.WARNING_MESSAGE);
-                }
+        txtName.addActionListener((ActionEvent e) -> {
+            String input2 = txtName.getText();
+            String duplicateName = OrderController.checkNumber(input2);
+            if (duplicateName != null) {
+                JOptionPane.showMessageDialog(null, "Duplicate name found: " + duplicateName, "Duplicate Name", JOptionPane.WARNING_MESSAGE);
             }
         });
 
@@ -101,12 +96,9 @@ public class PlaceOrderForm extends JFrame {
 
         txtQuantity = new JTextField();
         txtQuantity.setBounds(200, 500, 200, 30);
-        txtQuantity.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                int burgerQuantity = OrderController.getBurger();
-                System.out.println("Burger Quantity: " + burgerQuantity);
-            }
+        txtQuantity.addActionListener((ActionEvent e) -> {
+            int burgerQuantity = OrderController.getBurger();
+            System.out.println("Burger Quantity: " + burgerQuantity);
         });
         
         lblTotal = new JLabel("NET Total :");

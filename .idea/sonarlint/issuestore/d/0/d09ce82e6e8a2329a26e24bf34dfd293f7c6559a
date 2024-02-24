@@ -1,0 +1,10 @@
+
+^
+java:S6208F"CMerge the previous cases into this one using comma-separated label.(úâúÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ìºéÚ
+G
+java:S1602)",Remove useless curly braces around statement(Ôæ…ûÿÿÿÿ
+W
+java:S32522"AUse static access with "javax.swing.SwingConstants" for "CENTER".(Ï¸Û†
+W
+java:S32523"AUse static access with "javax.swing.SwingConstants" for "CENTER".(ÔàìØ

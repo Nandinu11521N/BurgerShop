@@ -1,0 +1,18 @@
+
+>
+java:S1604E"(Make this anonymous inner class a lambda(íÊç»
+>
+java:S1604W"(Make this anonymous inner class a lambda(É½•¤
+C
+java:S1604h"(Make this anonymous inner class a lambda(°×ä±þÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ìºéÚ
+E	java:S106J"+Replace this use of System.out by a logger.(²„Ëøúÿÿÿÿ
+E	java:S106l"+Replace this use of System.out by a logger.(–¢ù–ÿÿÿÿÿ
+C
+java:S1602’",Remove useless curly braces around statement(òÇÈÕ
+H
+java:S1602›",Remove useless curly braces around statement(Ôæ…žûÿÿÿÿ
+X
+java:S3252¥"AUse static access with "javax.swing.SwingConstants" for "CENTER".(Ï¸Û†
+X
+java:S3252¦"AUse static access with "javax.swing.SwingConstants" for "CENTER".(ÔàìØ
