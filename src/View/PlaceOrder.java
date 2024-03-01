@@ -17,12 +17,12 @@ import javax.swing.JLabel;
  * @author nandinusaminda
  */
     public class PlaceOrder extends JFrame {
-        private JButton btnPlaceOrder;
-        private JButton btnBackTo;
-        private JButton btnCancel;
+        private final JButton btnPlaceOrder;
+        private final JButton btnBackTo;
+        private final JButton btnCancel;
         
-        private JLabel lblHome;
-        private JLabel lblimage;
+        private final JLabel lblHome;
+        private final JLabel lblimage;
 
 
     public PlaceOrder(){
