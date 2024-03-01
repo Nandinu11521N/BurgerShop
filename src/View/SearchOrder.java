@@ -68,12 +68,10 @@ public class SearchOrder extends JFrame {
             txtTotal.setText(String.valueOf(order.getTotals())); 
             txtTotal.setEditable(false);
             int status = order.getOrderStatusArray();
-            if(status==0){
-                txtStatus.setText("PREPARING.....");
-            }else if(status==1){
-                txtStatus.setText("DELIVERED.....");
-            }else{
-                txtStatus.setText("CANCELED.....");
+            switch (status) {
+                case 0 -> txtStatus.setText("PREPARING.....");
+                case 1 -> txtStatus.setText("DELIVERED.....");
+                default -> txtStatus.setText("CANCELED.....");
             }
             txtStatus.setEditable(false);
         } else {

@@ -187,12 +187,12 @@ public class UpdateOrderForm extends JFrame {
         }
         int index = -1;
        
-        if (selectedStatus.equals("Processing....")) {
-            status = OrderDetails.STATUS_PREPARING;
-        } else if (selectedStatus.equals("Delivered....")) {
-            status = OrderDetails.STATUS_DELIVERED;
-        } else if (selectedStatus.equals("Canceled....")) {
-            status = OrderDetails.STATUS_CANCEL;
+        switch (selectedStatus) {
+            case "Processing...." -> status = OrderDetails.STATUS_PREPARING;
+            case "Delivered...." -> status = OrderDetails.STATUS_DELIVERED;
+            case "Canceled...." -> status = OrderDetails.STATUS_CANCEL;
+            default -> {
+            }
         }
         
         OrderDetails order = OrderController.getOrderById(orderId);
@@ -204,8 +204,7 @@ public class UpdateOrderForm extends JFrame {
         }
     }
 });
-        
-        
+          
         add(lblHome);
        
         add(lblOrderID);

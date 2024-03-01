@@ -23,8 +23,7 @@ import javax.swing.JLabel;
         
         private final JLabel lblHome;
         private final JLabel lblimage;
-
-
+        
     public PlaceOrder(){
         setTitle("Place Order");
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);

@@ -11,18 +11,17 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import static javax.swing.WindowConstants.EXIT_ON_CLOSE;
 
 /**
  *
  * @author nandinusaminda
  */
 public class UpdateOrder extends JFrame {
-    private JButton btnUpdateOrder;
-    private JButton btnBack;
+    private final JButton btnUpdateOrder;
+    private final JButton btnBack;
     
-    private JLabel lblHome;
-    private JLabel lblimage;
+    private final JLabel lblHome;
+    private final JLabel lblimage;
     
     public UpdateOrder(){
         setTitle("Update");

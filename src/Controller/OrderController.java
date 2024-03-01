@@ -97,10 +97,6 @@ public class OrderController {
            System.out.println("			||=====================================================================||\n\n\n\n\n\n");
            String orderId = getLastOrderID();
            System.out.println("						Order ID: " + orderId + "\n\n\n\n\n");
-           //String number = getNumber();
-
-          
-           //String name = checkNumber();
 
            System.out.println("\n\n\n\n\n\n");
            int burgerQuantity = getBurger();
@@ -119,10 +115,6 @@ public class OrderController {
                int lastIndex = orders.size() - 1;
 
                orders.get(lastIndex).setOrderIDs(orderId);
-               //orders.get(lastIndex).setNumbers(number);
-               //orders.get(lastIndex).setNames(name);
-               //orders.get(lastIndex).setBurgers(burgerQuantity);
-               //orders.get(lastIndex).setTotals(totalValue);
                orders.get(lastIndex).setOrderStatusArray(OrderDetails.STATUS_PREPARING);
 
                System.out.println("						Your order has been entered into the system successfully...\n\n\n");
@@ -155,7 +147,7 @@ public class OrderController {
    }
     public static String getNumber(String input){
         if (input.startsWith("0") && input.length() == 10) {
-            return input; // Valid phone number
+            return input;
         } else {
             return "Invalid phone number. Please enter a 10-digit number starting with '0'";
         }
@@ -165,10 +157,10 @@ public class OrderController {
     for (OrderDetails order : orders) {
         String orderName = order.getNames();
         if (name.equalsIgnoreCase(orderName)) {
-            return orderName; // Return the duplicate name if found
+            return orderName;
         }
     }
-    return null; // Return null if no duplicate name is found
+    return null; 
 }
     
     public static void bestCustomer(){
@@ -231,7 +223,6 @@ public class OrderController {
             }
         }
         
-
         for(int i = 0; i < customerOrders.size(); i++){
             System.out.printf("                %-35s %-35s %-20.2f%n",
 			customerOrders.get(i).getNumbers(),
@@ -243,19 +234,23 @@ public class OrderController {
         while(true){
             System.out.print("            Do You Want To Go Back To Main Menu (y/n) ? ");
             String yesOrNo = input.next();
-            if (yesOrNo.equals("y")){
-                clearScreen();
-                startSystem();
-                System.out.println("\n\n\n\n\n");
-            }else if(yesOrNo.equals("n")){
-                clearScreen();
-                bestCustomer();
-                System.out.println("\n\n\n\n\n");
-            }else{
-                clearScreen();
-                System.out.println("Invalid input. Please enter 'y' for Yes or 'n' for No.");
-                System.out.println("\n\n\n");
-            }
+                    switch (yesOrNo) {
+                        case "y" -> {
+                            clearScreen();
+                            startSystem();
+                            System.out.println("\n\n\n\n\n");
+                        }
+                        case "n" -> {
+                            clearScreen();
+                            bestCustomer();
+                            System.out.println("\n\n\n\n\n");
+                        }
+                        default -> {
+                            clearScreen();
+                            System.out.println("Invalid input. Please enter 'y' for Yes or 'n' for No.");
+                            System.out.println("\n\n\n");
+                        }
+                    }
         }
     }
     
@@ -280,15 +275,12 @@ public class OrderController {
 			int burger = orders.get(index).getBurgers();
 			double total = orders.get(index).getTotals();
 
-			if(orders.get(index).getOrderStatusArray() == OrderDetails.STATUS_PREPARING){
-				statusString = "PREPARING";
-			}else if(orders.get(index).getOrderStatusArray() == OrderDetails.STATUS_DELIVERED){
-				statusString = "DELIVERED";
-			}else if(orders.get(index).getOrderStatusArray() == OrderDetails.STATUS_CANCEL){
-				statusString = "CANCELLED";
-			}else{
-				statusString = "INVALID";
-			}
+                        statusString = switch (orders.get(index).getOrderStatusArray()) {
+                        case OrderDetails.STATUS_PREPARING -> "PREPARING";
+                        case OrderDetails.STATUS_DELIVERED -> "DELIVERED";
+                        case OrderDetails.STATUS_CANCEL -> "CANCELLED";
+                        default -> "INVALID";
+                    };
 
         System.out.println("\n\n");
         System.out.println("           |--------------------------------------------------------------------------------------------------------------------------------------------------------|\n");
@@ -300,34 +292,42 @@ public class OrderController {
         while(true){
             System.out.print("Do You Want To Exit (y/n) :- ");
             String yesOrNo = input.next();
-            if(yesOrNo.equals("y")){
-                clearScreen();
-                startSystem();
-                System.out.println("\n\n\n\n\n");
-            }else if(yesOrNo.equals("n")){
-                clearScreen();
-                searchOrder();
-            }else{
-                clearScreen();
-                System.out.println("Invalid input. Please enter 'y' for Yes or 'n' for No.");
-                System.out.println("\n\n\n");
-            }
+                            switch (yesOrNo) {
+                                case "y" -> {
+                                    clearScreen();
+                                    startSystem();
+                                    System.out.println("\n\n\n\n\n");
+                                }
+                                case "n" -> {
+                                    clearScreen();
+                                    searchOrder();
+                                }
+                                default -> {
+                                    clearScreen();
+                                    System.out.println("Invalid input. Please enter 'y' for Yes or 'n' for No.");
+                                    System.out.println("\n\n\n");
+                                }
+                            }
         }
     }else{
         while(true){
             System.out.print("\n\n\nInvalid Order ID.....Do You Want To Enter Again ? (y/n) :- ");
             String yesOrNo = input.next();
-            if(yesOrNo.equals("y")){
-                clearScreen();
-                searchOrder();
-                System.out.println("\n\n\n\n\n");
-            }else if(yesOrNo.equals("n")){
-                clearScreen();
-                startSystem();
-            }else{
-                clearScreen();
-                System.out.println("Invalid input. Please enter 'y' for Yes or 'n' for No.");
-                System.out.println("\n\n\n");
+            switch (yesOrNo) {
+                case "y" -> {
+                    clearScreen();
+                    searchOrder();
+                    System.out.println("\n\n\n\n\n");
+                }
+                case "n" -> {
+                    clearScreen();
+                    startSystem();
+                }
+                default -> {
+                    clearScreen();
+                    System.out.println("Invalid input. Please enter 'y' for Yes or 'n' for No.");
+                    System.out.println("\n\n\n");
+                }
             }
         }
     }
@@ -382,17 +382,21 @@ public static void searchCustomer(){
             System.out.println("|-----------------------------------------------------------------------------------|\n\n");
             System.out.print("        Do You Want To Search Another Customer Details (y/n) ?");
             String yesOrNo = input.next();
-            if(yesOrNo.equals("y")){
-                clearScreen();
-                searchCustomer();
-                System.out.println("\n\n\n\n\n");
-            }else if(yesOrNo.equals("n")){
-                clearScreen();
-                startSystem();
-            }else{
-                clearScreen();
-                System.out.println("Invalid input. Please enter 'y' for Yes or 'n' for No.");
-                System.out.println("\n\n\n");
+            switch (yesOrNo) {
+                case "y" -> {
+                    clearScreen();
+                    searchCustomer();
+                    System.out.println("\n\n\n\n\n");
+                }
+                case "n" -> {
+                    clearScreen();
+                    startSystem();
+                }
+                default -> {
+                    clearScreen();
+                    System.out.println("Invalid input. Please enter 'y' for Yes or 'n' for No.");
+                    System.out.println("\n\n\n");
+                }
             }
         }else if(index == -1){
             System.out.println("\n\n\n        This Customer ID Is Not Added Yet OR Invalid Number...........\n\n\n");
@@ -400,17 +404,21 @@ public static void searchCustomer(){
             while(true){
                 System.out.print("        Do You Want To Search Another Customer Details (y/n) ?");
                 String yesOrNo2 = input.next();
-                if(yesOrNo2.equals("y")){
-                    clearScreen();
-                    searchCustomer();
-                    System.out.println("\n\n\n\n\n");
-                }else if(yesOrNo2.equals("n")){
-                    clearScreen();
-                    startSystem();
-                }else{
-                    clearScreen();
-                    System.out.println("Invalid input. Please enter 'y' for Yes or 'n' for No.");
-                    System.out.println("\n\n\n");
+                switch (yesOrNo2) {
+                    case "y" -> {
+                        clearScreen();
+                        searchCustomer();
+                        System.out.println("\n\n\n\n\n");
+                    }
+                    case "n" -> {
+                        clearScreen();
+                        startSystem();
+                    }
+                    default -> {
+                        clearScreen();
+                        System.out.println("Invalid input. Please enter 'y' for Yes or 'n' for No.");
+                        System.out.println("\n\n\n");
+                    }
                 }
             }
         }
@@ -433,17 +441,10 @@ public static void viewOrders(){
     int num = input.nextInt();
 
     switch(num){
-        case 1:
-            displayOrdersByStatus(1, "Delivered Orders");
-            break;
-        case 2:
-            displayOrdersByStatus(0, "Preparing Orders");
-            break;
-        case 3:
-            displayOrdersByStatus(2, "Cancel Orders");
-            break;
-        default:
-            handleInvalidInput();
+        case 1 -> displayOrdersByStatus(1, "Delivered Orders");
+        case 2 -> displayOrdersByStatus(0, "Preparing Orders");
+        case 3 -> displayOrdersByStatus(2, "Cancel Orders");
+        default -> handleInvalidInput();
     }
 
     while(true){
@@ -482,18 +483,22 @@ private static void handleInvalidInput(){
         System.out.print("\n\n\n            \t\t\t\t\t\tInvalid Input.....Do You Want To Exit ? (y/n) :- ");
         String yesOrNo = input.next();
 
-        if(yesOrNo.equals("y")){
-            clearScreen();
-            startSystem();
-            System.out.println("\n\n\n\n\n");
-        }else if(yesOrNo.equals("n")){
-            clearScreen();
-            viewOrders();
-            System.out.println("\n\n\n\n\n");
-        }else{
-            clearScreen();
-            System.out.println("            Invalid input. Please enter 'y' for Yes or 'n' for No.");
-            System.out.println("\n\n\n");
+        switch (yesOrNo) {
+            case "y" -> {
+                clearScreen();
+                startSystem();
+                System.out.println("\n\n\n\n\n");
+            }
+            case "n" -> {
+                clearScreen();
+                viewOrders();
+                System.out.println("\n\n\n\n\n");
+            }
+            default -> {
+                clearScreen();
+                System.out.println("            Invalid input. Please enter 'y' for Yes or 'n' for No.");
+                System.out.println("\n\n\n");
+            }
         }
     }
 }
@@ -504,18 +509,22 @@ private static void handleExitOption(){
     System.out.print("            Do You Want To Exit ? (y/n) :- ");
     String yesOrNo = input.next();
 
-    if(yesOrNo.equals("y")){
-        clearScreen();
-        startSystem();
-        System.out.println("\n\n\n\n\n");
-    }else if(yesOrNo.equals("n")){
-        clearScreen();
-        viewOrders();
-    }else{
-        clearScreen();
-        System.out.println("            Invalid input. Please enter 'y' for Yes or 'n' for No.");
-        System.out.println("\n\n\n");
-    }
+        switch (yesOrNo) {
+            case "y" -> {
+                clearScreen();
+                startSystem();
+                System.out.println("\n\n\n\n\n");
+            }
+            case "n" -> {
+                clearScreen();
+                viewOrders();
+            }
+            default -> {
+                clearScreen();
+                System.out.println("            Invalid input. Please enter 'y' for Yes or 'n' for No.");
+                System.out.println("\n\n\n");
+            }
+        }
 }
 
 public static void updateOrder(){
@@ -557,17 +566,21 @@ public static void updateOrder(){
             System.out.print("\n\n\n\t\t\tInvalid Order ID.....Do You Want To Enter Again ? (y/n) :- ");
             String yesOrNo = input.next();
 
-            if(yesOrNo.equals("y")){
-                clearScreen();
-                updateOrder();
-                System.out.println("\n\n\n\n\n");
-            }else if(yesOrNo.equals("n")){
-                clearScreen();
-                startSystem();
-            }else{
-                clearScreen();
-                System.out.println("\n\n\n\t\t\tInvalid input. Please enter 'y' for Yes or 'n' for No.");
-                System.out.println("\n\n\n");
+            switch (yesOrNo) {
+                case "y" -> {
+                    clearScreen();
+                    updateOrder();
+                    System.out.println("\n\n\n\n\n");
+                }
+                case "n" -> {
+                    clearScreen();
+                    startSystem();
+                }
+                default -> {
+                    clearScreen();
+                    System.out.println("\n\n\n\t\t\tInvalid input. Please enter 'y' for Yes or 'n' for No.");
+                    System.out.println("\n\n\n");
+                }
             }
         }
     }
@@ -601,15 +614,12 @@ private static void displayOrderDetails(int index){
 }
 
 private static String getStatusString(int index){
-    if(orders.get(index).getOrderStatusArray() == OrderDetails.STATUS_PREPARING){
-        return "PREPARING";
-    }else if(orders.get(index).getOrderStatusArray() == OrderDetails.STATUS_DELIVERED){
-        return "DELIVERED";
-    }else if(orders.get(index).getOrderStatusArray() == OrderDetails.STATUS_CANCEL){
-        return "CANCELLED";
-    }else{
-        return "INVALID";
-    }
+        return switch (orders.get(index).getOrderStatusArray()) {
+            case OrderDetails.STATUS_PREPARING -> "PREPARING";
+            case OrderDetails.STATUS_DELIVERED -> "DELIVERED";
+            case OrderDetails.STATUS_CANCEL -> "CANCELLED";
+            default -> "INVALID";
+        };
 }
 
 private static void updateQuantity(int index){
@@ -645,13 +655,13 @@ private static void updateStatus(int index){
     System.out.print("Enter New Order Status :- ");
     char newStatus = input.next().charAt(0);
 
-    if(newStatus == '0'){
-        orders.get(index).setOrderStatusArray(OrderDetails.STATUS_CANCEL);
-    }else if(newStatus == '1'){
-        orders.get(index).setOrderStatusArray(OrderDetails.STATUS_PREPARING);
-    }else if(newStatus == '2'){
-        orders.get(index).setOrderStatusArray(OrderDetails.STATUS_DELIVERED);
-    }
+        switch (newStatus) {
+            case '0' -> orders.get(index).setOrderStatusArray(OrderDetails.STATUS_CANCEL);
+            case '1' -> orders.get(index).setOrderStatusArray(OrderDetails.STATUS_PREPARING);
+            case '2' -> orders.get(index).setOrderStatusArray(OrderDetails.STATUS_DELIVERED);
+            default -> {
+            }
+        }
 
     System.out.println("\n\nNew Order Status :- " + getStatusString(index) + "\n\n\n");
     handleUpdateAnotherOrder();
@@ -662,21 +672,24 @@ private static void handleUpdateAnotherOrder(){
         System.out.print("Do You Want To Update Another Order Details ? (y/n) ");
         String yesOrNo = input.next();
 
-        if(yesOrNo.equals("y")){
-            clearScreen();
-            updateOrder();
-            System.out.println("\n\n\n\n\n");
-        }else if(yesOrNo.equals("n")){
-            clearScreen();
-            startSystem();
-        }else{
-            clearScreen();
-            handleInvalidInput();
+        switch (yesOrNo) {
+            case "y" -> {
+                clearScreen();
+                updateOrder();
+                System.out.println("\n\n\n\n\n");
+            }
+            case "n" -> {
+                clearScreen();
+                startSystem();
+            }
+            default -> {
+                clearScreen();
+                handleInvalidInput();
+            }
         }
     }
 }
-
-       
+     
     public static String getLastOrderID(){
         if (!orders.isEmpty()){
             String lastId = orders.get(orders.size() - 1).getOrderIDs();

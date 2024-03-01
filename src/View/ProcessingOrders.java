@@ -16,7 +16,6 @@ import javax.swing.JLabel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
-import javax.swing.table.JTableHeader;
 
 /**
  *
@@ -63,18 +62,12 @@ public class ProcessingOrders extends JFrame {
         DefaultTableModel model = new DefaultTableModel(columns, 0) {
             @Override
             public Class<?> getColumnClass(int columnIndex) {
-                switch (columnIndex) {
-                    case 0:
-                    case 1:
-                    case 2:
-                        return String.class;
-                    case 3:
-                        return Integer.class;
-                    case 4:
-                        return Double.class;
-                    default:
-                        return Object.class;
-                }
+                return switch (columnIndex) {
+                    case 0, 1, 2 -> String.class;
+                    case 3 -> Integer.class;
+                    case 4 -> Double.class;
+                    default -> Object.class;
+                };
             }
         };
 
