@@ -7,25 +7,15 @@ package View;
 
 
 import Controller.OrderController;
-import static Controller.OrderController.checkNumber;
-import static Controller.OrderController.extendList;
-import static Controller.OrderController.getBurger;
-import static Controller.OrderController.getLastOrderID;
-import static Controller.OrderController.getNumber;
-import static Controller.OrderController.orders;
-import static Controller.OrderController.getTotal;
 import Model.OrderDetails;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.util.Scanner;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
-import static javax.swing.WindowConstants.EXIT_ON_CLOSE;
 
 /**
  *
@@ -49,8 +39,6 @@ public class PlaceOrderForm extends JFrame {
         private final JTextField txtName;
         private final JTextField txtQuantity;
         private final JTextField txtTotal;
-    private String result;
-    private String duplicateName;
         
 
     public PlaceOrderForm(){
@@ -77,15 +65,13 @@ public class PlaceOrderForm extends JFrame {
 
         txtCustomerID = new JTextField();
         txtCustomerID.setBounds(200, 300, 200, 30);
-        txtCustomerID.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                String input1 = txtCustomerID.getText();
-                String result = OrderController.getNumber(input1);
-                if (result.equals(input1)) {
-                    System.out.println("Valid phone number: " + input1);
-                } else {
-                    JOptionPane.showMessageDialog(null, result, "Invalid Input", JOptionPane.ERROR_MESSAGE);
-                }
+        txtCustomerID.addActionListener((ActionEvent e) -> {
+            String input1 = txtCustomerID.getText();
+            String result1 = OrderController.getNumber(input1);
+            if (result1.equals(input1)) {
+                System.out.println("Valid phone number: " + input1);
+            } else {
+                JOptionPane.showMessageDialog(null, result1, "Invalid Input", JOptionPane.ERROR_MESSAGE);
             }
         });
 
@@ -95,14 +81,11 @@ public class PlaceOrderForm extends JFrame {
 
         txtName = new JTextField();
         txtName.setBounds(200, 400, 400, 30);
-        txtName.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                String input2 = txtName.getText();
-                String duplicateName = OrderController.checkNumber(input2);
-                if (duplicateName != null) {
-                    JOptionPane.showMessageDialog(null, "Duplicate name found: " + duplicateName, "Duplicate Name", JOptionPane.WARNING_MESSAGE);
-                }
+        txtName.addActionListener((ActionEvent e) -> {
+            String input2 = txtName.getText();
+            String duplicateName1 = OrderController.checkNumber(input2);
+            if (duplicateName1 != null) {
+                JOptionPane.showMessageDialog(null, "Duplicate name found: " + duplicateName1, "Duplicate Name", JOptionPane.WARNING_MESSAGE);
             }
         });
 
@@ -112,12 +95,9 @@ public class PlaceOrderForm extends JFrame {
 
         txtQuantity = new JTextField();
         txtQuantity.setBounds(200, 500, 200, 30);
-        txtQuantity.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                int burgerQuantity = OrderController.getBurger();
-                System.out.println("Burger Quantity: " + burgerQuantity);
-            }
+        txtQuantity.addActionListener((ActionEvent e) -> {
+            int burgerQuantity = OrderController.getBurger();
+            System.out.println("Burger Quantity: " + burgerQuantity);
         });
         
         lblTotal = new JLabel("NET Total :");
