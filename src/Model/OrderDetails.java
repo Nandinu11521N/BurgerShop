@@ -34,8 +34,6 @@ public class OrderDetails {
         this.totals = totals;
     }
 
-    
-
     public String getNumbers(){
         return numbers;
     }
