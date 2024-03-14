@@ -154,6 +154,7 @@ public class PlaceOrderForm extends JFrame {
         lblHome.setBackground(new Color(255,0,0));
         lblHome.setOpaque(true);
        
+        
        
         add(lblHome);
         add(lblOrderID);
