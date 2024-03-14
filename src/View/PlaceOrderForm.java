@@ -116,7 +116,7 @@ public class PlaceOrderForm extends JFrame {
             txtTotal.setText(String.valueOf(totalValue));
             
             OrderController.extendList();
-            int lastIndex = OrderController.orders.size() - 1;
+            int lastIndex = OrderController.orders.size() - 1; 
             
             OrderController.orders.get(lastIndex).setOrderIDs(orderId);
             OrderController.orders.get(lastIndex).setNumbers(txtCustomerID.getText());
@@ -154,7 +154,7 @@ public class PlaceOrderForm extends JFrame {
         lblHome.setBackground(new Color(255,0,0));
         lblHome.setOpaque(true);
        
-        
+       
         add(lblHome);
         add(lblOrderID);
         add(txtOrderID);

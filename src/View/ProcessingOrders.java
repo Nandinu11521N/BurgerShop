@@ -85,7 +85,7 @@ public class ProcessingOrders extends JFrame {
         };
         model.addRow(rowData);
     }
-
+      
         JScrollPane scrollPane = new JScrollPane(table);
         scrollPane.setBounds(50, 100, 700, 350); 
 
