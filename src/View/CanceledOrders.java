@@ -22,8 +22,7 @@ import javax.swing.table.DefaultTableModel;
  * @author nandinusaminda
  */
 public class CanceledOrders extends JFrame {
-    private final JButton btnCancel;
-    
+    private final JButton btnCancel;   
     private final JLabel lblHome ;
     
     public CanceledOrders(){
@@ -101,6 +100,7 @@ public class CanceledOrders extends JFrame {
         add(lblHome);
         add(scrollPane);
         add(btnCancel);
+        
         getContentPane().setBackground(Color.WHITE);
         setResizable(false);
         setVisible(true);

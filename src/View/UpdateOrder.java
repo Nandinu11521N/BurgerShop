@@ -66,8 +66,7 @@ public class UpdateOrder extends JFrame {
         lblimage.setVisible(true);
         
         add(lblHome);
-        add(lblimage);
-        
+        add(lblimage);       
         add(btnUpdateOrder);
         add(btnBack);
         

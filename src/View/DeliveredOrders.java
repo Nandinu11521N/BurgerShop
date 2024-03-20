@@ -22,8 +22,7 @@ import javax.swing.table.DefaultTableModel;
  * @author nandinusaminda
  */
 public class DeliveredOrders extends JFrame {
-    private final JButton btnCancel;
-    
+    private final JButton btnCancel;   
     private final JLabel lblHome ;
     
     public DeliveredOrders(){
@@ -85,15 +84,15 @@ public class DeliveredOrders extends JFrame {
         table.setFont(new Font("", Font.PLAIN, 16));
         
         for (OrderDetails order : deliveredOrders) {
-        Object[] rowData = {
-            order.getOrderIDs(),
-            order.getNumbers(),
-            order.getNames(),
-            order.getBurgers(),
-            order.getTotals()
-        };
-        model.addRow(rowData);
-    }
+            Object[] rowData = {
+                order.getOrderIDs(),
+                order.getNumbers(),
+                order.getNames(),
+                order.getBurgers(),
+                order.getTotals()
+            };
+            model.addRow(rowData);
+        }
 
         JScrollPane scrollPane = new JScrollPane(table);
         scrollPane.setBounds(50, 100, 700, 350); 
@@ -101,6 +100,7 @@ public class DeliveredOrders extends JFrame {
         add(lblHome);
         add(scrollPane);
         add(btnCancel);
+        
         getContentPane().setBackground(Color.WHITE);
         setResizable(false);
         setVisible(true);

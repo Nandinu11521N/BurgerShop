@@ -23,8 +23,7 @@ public class PlaceOrderForm extends JFrame {
         private final JButton btnBackTo;
         private final JButton btnCancel;
         
-        private final JLabel lblHome;
-        
+        private final JLabel lblHome;       
         private final JLabel lblOrderID;
         private final JLabel lblCustomerID;
         private final JLabel lblName;
@@ -37,7 +36,6 @@ public class PlaceOrderForm extends JFrame {
         private final JTextField txtQuantity;
         private final JTextField txtTotal;
         
-
     public PlaceOrderForm(){
         setTitle("Place Order Form");
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
@@ -104,8 +102,7 @@ public class PlaceOrderForm extends JFrame {
         txtTotal = new JTextField();
         txtTotal.setBounds(1150,800,120,40);
         txtOrderID.setEditable(false);
-        
-        
+                
         btnPlaceOrder= new JButton("Place Order");
         btnPlaceOrder.setFont(new Font("",Font.PLAIN,20));
         btnPlaceOrder.setBounds(1000,200,300,40);
@@ -153,9 +150,7 @@ public class PlaceOrderForm extends JFrame {
         lblHome.setHorizontalAlignment(JLabel.CENTER);
         lblHome.setBackground(new Color(255,0,0));
         lblHome.setOpaque(true);
-       
-        
-       
+            
         add(lblHome);
         add(lblOrderID);
         add(txtOrderID);
@@ -167,11 +162,10 @@ public class PlaceOrderForm extends JFrame {
         add(txtQuantity);
         add(lblTotal);
         add(txtTotal);
-        
-        
         add(btnPlaceOrder);
         add(btnBackTo);
         add(btnCancel);
+        
         getContentPane().setBackground(Color.gray);
         setVisible(true);
         

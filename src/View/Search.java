@@ -90,15 +90,14 @@ public class Search extends JFrame {
             g.drawImage(image, 0, 0, width, height, this);
         }
     };
-    panel.setBounds(0, 0, 1450, 900);
+        
+        panel.setBounds(0, 0, 1450, 900);
 
         add(lblHome);
-        
         add(btnSearchBest);
         add(btnSearchOrder);
         add(btnSearchCustomer);
         add(btnExit);
-        
         add(panel);
         
     }

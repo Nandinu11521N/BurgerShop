@@ -28,8 +28,7 @@ public class UpdateOrderForm extends JFrame {
     
     private final JLabel lblHome;
     
-    JFrame frame = new JFrame("Dropdown Example");
-    
+    JFrame frame = new JFrame("Dropdown Example");   
     
     private final JLabel lblOrderID;
     private final JLabel lblCustomerID;
@@ -205,8 +204,7 @@ public class UpdateOrderForm extends JFrame {
     }
 });
           
-        add(lblHome);
-       
+        add(lblHome);      
         add(lblOrderID);
         add(txtOrderID);
         add(lblCustomerID);
@@ -217,11 +215,9 @@ public class UpdateOrderForm extends JFrame {
         add(txtQuantity);
         add(lblTotal);
         add(txtTotal);
-        add(lblStatus);
-        
+        add(lblStatus);        
         add(btnCancel);
-        add(btnUpdate);
-        
+        add(btnUpdate);       
         add(comboBox);
         
         

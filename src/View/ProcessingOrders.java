@@ -92,6 +92,7 @@ public class ProcessingOrders extends JFrame {
         add(lblHome);
         add(scrollPane);
         add(btnCancel);
+        
         getContentPane().setBackground(Color.WHITE);
         setResizable(false);
         setVisible(true);

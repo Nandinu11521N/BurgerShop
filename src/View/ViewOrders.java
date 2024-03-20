@@ -84,8 +84,7 @@ public class ViewOrders extends JFrame {
         lblimage.setVisible(true);
         
         add(lblHome);
-        add(lblimage);
-        
+        add(lblimage);        
         add(btnDeliveredOrders);
         add(btnPreparingOrders);
         add(btnCanceledOrders);

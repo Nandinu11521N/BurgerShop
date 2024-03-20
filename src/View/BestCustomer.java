@@ -22,10 +22,8 @@ import javax.swing.table.DefaultTableModel;
  * @author nandinusaminda
  */
 public class BestCustomer extends JFrame {
-    private JButton btnExit;
-    
+    private JButton btnExit;   
     private JLabel lblHome;
-    
     private final JTable table;
     
     public BestCustomer(){
@@ -48,8 +46,7 @@ public class BestCustomer extends JFrame {
         lblHome.setText("BEST CUSTOMER");
         lblHome.setFont(new Font("",Font.BOLD,40));
         lblHome.setForeground(Color.white);
-        lblHome.setBounds(0,0,1500,70);
-        
+        lblHome.setBounds(0,0,1500,70);       
         lblHome.setVerticalAlignment(JLabel.CENTER);
         lblHome.setHorizontalAlignment(JLabel.CENTER);
         lblHome.setBackground(new Color(255,0,0));
@@ -59,18 +56,15 @@ public class BestCustomer extends JFrame {
         DefaultTableModel model = new DefaultTableModel(columns, 0) {
             @Override
             public Class<?> getColumnClass(int columnIndex) {
-                switch (columnIndex) {
-                    case 0:
-                        return String.class;
-                    case 1:
-                        return String.class;
-                    case 2:
-                        return Double.class;
-                    default:
-                        return Object.class;
-                }
+                return switch (columnIndex) {
+                    case 0 -> String.class;
+                    case 1 -> String.class;
+                    case 2 -> Double.class;
+                    default -> Object.class;
+                };
             }
         };
+        
         table = new JTable(model);
         table.setRowHeight(30);
         table.setFont(new Font("", Font.PLAIN, 20));
@@ -93,7 +87,7 @@ public class BestCustomer extends JFrame {
                     isUnique = false;
                     break;
                 }
-            }
+            } 
             if(isUnique){
                 if(customerOrders.get(i).getOrderStatusArray() == OrderDetails.STATUS_PREPARING || customerOrders.get(i).getOrderStatusArray() == OrderDetails.STATUS_DELIVERED){
                     aggregatedTotals.set(i, aggregatedTotals.get(i) + customerOrders.get(i).getTotals());
@@ -131,10 +125,8 @@ public class BestCustomer extends JFrame {
 			aggregatedTotals.get(i)
                 };
                 model.addRow(rowData);
-    
-        
+           
             add(lblHome);
-
             add(btnExit);
         }
     }

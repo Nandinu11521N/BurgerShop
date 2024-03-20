@@ -23,8 +23,7 @@ import javax.swing.JTextField;
 public class SearchOrder extends JFrame {
     private final JButton btnCancel;
     
-    private final JLabel lblHome;
-    
+    private final JLabel lblHome;    
     private final JLabel lblOrderID;
     private final JLabel lblCustomerID;
     private final JLabel lblName;
@@ -62,11 +61,11 @@ public class SearchOrder extends JFrame {
 
         if (order != null) {
             txtCustomerID.setText(order.getNumbers()); 
-            txtName.setText(order.getNames()); 
+            txtName.setText(order.getNames());
             txtQuantity.setText(String.valueOf(order.getBurgers()));
             txtQuantity.setEditable(false);
-            txtTotal.setText(String.valueOf(order.getTotals())); 
-            txtTotal.setEditable(false);
+            txtTotal.setText(String.valueOf(order.getTotals()));
+            txtTotal.setEditable(false);            
             int status = order.getOrderStatusArray();
             switch (status) {
                 case 0 -> txtStatus.setText("PREPARING.....");
@@ -138,10 +137,8 @@ public class SearchOrder extends JFrame {
         lblHome.setHorizontalAlignment(JLabel.CENTER);
         lblHome.setBackground(new Color(255,0,0));
         lblHome.setOpaque(true);
-        
-        
-        add(lblHome);
-        
+               
+        add(lblHome);  
         add(lblOrderID);
         add(txtOrderID);
         add(lblCustomerID);
@@ -153,13 +150,8 @@ public class SearchOrder extends JFrame {
         add(lblTotal);
         add(txtTotal);
         add(lblStatus);
-        add(txtStatus);
-        
+        add(txtStatus);       
         add(btnCancel);
-        
-        
-     
-        
         
     }
 }

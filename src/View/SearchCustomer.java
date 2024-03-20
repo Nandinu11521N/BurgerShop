@@ -121,6 +121,7 @@ public class SearchCustomer extends JFrame {
                 }
             }
         };
+        
         table = new JTable(model);
         table.setRowHeight(30);
         table.setFont(new Font("", Font.PLAIN, 16));
@@ -141,6 +142,7 @@ public class SearchCustomer extends JFrame {
                         order.getBurgers(),
                         order.getTotals()
                 };
+                
                 model.addRow(rowData);
             }
         }

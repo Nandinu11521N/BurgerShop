@@ -97,8 +97,7 @@ public class HomePage extends JFrame {
         
         
         add(lblHome);
-        add(lblimage);
-        
+        add(lblimage);       
         add(btnPlaceOrder);
         add(btnSearch);
         add(btnViewOrder);

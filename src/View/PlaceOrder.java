@@ -61,8 +61,7 @@ import javax.swing.JLabel;
         lblHome.setText("PLACE ORDER");
         lblHome.setFont(new Font("",Font.BOLD,40));
         lblHome.setForeground(Color.white);
-        lblHome.setBounds(0,0,900,70);
-        
+        lblHome.setBounds(0,0,900,70);       
         lblHome.setVerticalAlignment(JLabel.CENTER);
         lblHome.setHorizontalAlignment(JLabel.CENTER);
         lblHome.setBackground(new Color(255,0,0));
@@ -76,8 +75,7 @@ import javax.swing.JLabel;
         lblimage.setVisible(true);
         
         add(lblHome);
-        add(lblimage);
-        
+        add(lblimage);        
         add(btnPlaceOrder);
         add(btnBackTo);
         add(btnCancel);
